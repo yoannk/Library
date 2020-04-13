@@ -1,3 +1,33 @@
 ﻿@model Library.ViewModels.Catalog.CatalogIndexViewModel
+@using
 
 <h1>@Model.PageTitle</h1>
+
+<div id="assets">
+    <h3>Library Catalog</h3>
+    <div id="assetsTable">
+        <table class="table table-sm" id="catalogIndexTable">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Title</th>
+                    <th>Author / Director</th>
+                    <th>Dewey Call Number</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var asset in Model.Assets)
+                {
+                    <tr class="assetRow">
+                        <td class="">
+                            <img src="@asset.ImageUrl" alt="@asset.Title" class="imageCell" />
+                        </td>
+                        <td class="">@asset.Title</td>
+                        <td class="">@asset.AuthorOrDirector</td>
+                        <td class="">@asset.DeweyCallNumber</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

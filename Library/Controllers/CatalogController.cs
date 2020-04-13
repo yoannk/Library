@@ -1,4 +1,5 @@
-﻿using Library.Models.Catalog;
+﻿using Library.ViewModels.Catalog;
+using Library.ViewModels.Items;
 using LibraryData;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -20,18 +21,18 @@ namespace Library.Controllers
         public IActionResult Index()
         {
             var listingResult = _assets.GetAll()
-                .Select(result => new AssetIndexListingViewModel
+                .Select(result => new AssetViewModel()
                 {
                     Id = result.Id,
                     ImageUrl = result.ImageUrl,
-                    Title = result.Title,
                     AuthorOrDirector = _assets.GetAuthorOrDirector(result.Id),
-                    Type = _assets.GetTitle(result.Id),
                     DeweyCallNumber = _assets.GetDeweyIndex(result.Id),
+                    Title = result.Title,
+                    Type = _assets.GetType(result.Id),
                     NumberOfCopies = result.NumberOfCopies
                 });
 
-            var viewModel = new AssetIndexViewModel()
+            var viewModel = new CatalogIndexViewModel()
             {
                 Assets = listingResult
             };
