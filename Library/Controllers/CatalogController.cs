@@ -21,7 +21,7 @@ namespace Library.Controllers
         public IActionResult Index()
         {
             var listingResult = _assets.GetAll()
-                .Select(result => new AssetViewModel()
+                .Select(result => new AssetModel()
                 {
                     Id = result.Id,
                     ImageUrl = result.ImageUrl,

@@ -1,6 +1,6 @@
 ﻿namespace Library.ViewModels.Items
 {
-    public class AssetViewModel
+    public class AssetModel
     {
         public int Id { get; set; }
         public string ImageUrl { get; set; }
