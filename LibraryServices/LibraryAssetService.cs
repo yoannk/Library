@@ -41,12 +41,12 @@ namespace LibraryServices
 
         public string GetDeweyIndex(int id)
         {
-            return _context.Books.FirstOrDefault(book => book.Id == id).DeweyIndex ?? "";
+            return _context.Books.FirstOrDefault(book => book.Id == id)?.DeweyIndex ?? "";
         }
 
         public string GetIsbn(int id)
         {
-            return _context.Books.FirstOrDefault(book => book.Id == id).ISBN ?? "";
+            return _context.Books.FirstOrDefault(book => book.Id == id)?.ISBN ?? "";
         }
 
         public string GetTitle(int id)
