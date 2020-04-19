@@ -39,5 +39,12 @@ namespace Library.Controllers
 
             return View(viewModel);
         }
+
+        public IActionResult Detail(int id)
+        {
+            var asset = _assets.GetById(id);
+
+            return View();
+        }
     }
 }
