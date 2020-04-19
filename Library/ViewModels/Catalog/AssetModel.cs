@@ -1,4 +1,4 @@
-﻿namespace Library.ViewModels.Items
+﻿namespace Library.ViewModels.Catalog
 {
     public class AssetModel
     {

@@ -1,4 +1,4 @@
-﻿namespace Library.Models
+﻿namespace Library.ViewModels
 {
     public abstract class ViewModelBase
     {

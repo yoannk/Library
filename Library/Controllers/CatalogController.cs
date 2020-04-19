@@ -1,5 +1,4 @@
 ﻿using Library.ViewModels.Catalog;
-using Library.ViewModels.Items;
 using LibraryData;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -44,7 +43,21 @@ namespace Library.Controllers
         {
             var asset = _assets.GetById(id);
 
-            return View();
+            var viewModel = new CatalogDetailViewModel
+            {
+                AssetId = id,
+                Title = asset.Title,
+                Year = asset.Year,
+                Cost = asset.Cost,
+                Status = asset.Status.Name,
+                ImageUrl = asset.ImageUrl,
+                AuthorOrDirector = _assets.GetAuthorOrDirector(id),
+                CurrentLocation = _assets.GetCurrentLocation(id).Name,
+                DeweyCallNumber = _assets.GetDeweyIndex(id),
+                ISBN = _assets.GetIsbn(id),
+            };
+
+            return View(viewModel);
         }
     }
 }
