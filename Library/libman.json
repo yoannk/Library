@@ -1,0 +1,36 @@
+{
+  "version": "1.0",
+  "defaultProvider": "unpkg",
+  "libraries": [
+    {
+      "provider": "filesystem",
+      "library": "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css",
+      "destination": "wwwroot/lib/bootstrap"
+    },
+    {
+      "provider": "filesystem",
+      "library": "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js",
+      "destination": "wwwroot/lib/bootstrap"
+    },
+    {
+      "provider": "filesystem",
+      "library": "https://code.jquery.com/jquery-3.4.1.slim.min.js",
+      "destination": "wwwroot/lib/jquery"
+    },
+    {
+      "provider": "filesystem",
+      "library": "https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js",
+      "destination": "wwwroot/lib/popper"
+    },
+    {
+      "provider": "filesystem",
+      "library": "https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js",
+      "destination": "wwwroot/lib/jquery-validation"
+    },
+    {
+      "provider": "filesystem",
+      "library": "https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js",
+      "destination": "wwwroot/lib/jquery-validation-unobtrusive"
+    }
+  ]
+}
