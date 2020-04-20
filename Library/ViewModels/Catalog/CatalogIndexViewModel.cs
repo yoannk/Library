@@ -2,7 +2,7 @@
 
 namespace Library.ViewModels.Catalog
 {
-    public class CatalogIndexViewModel : ViewModelBase
+    public class CatalogIndexViewModel
     {
         public IEnumerable<AssetModel> Assets { get; set; }
     }

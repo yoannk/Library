@@ -1,0 +1,18 @@
+[
+  {
+    "outputFileName": "wwwroot/css/vendor.css",
+    "inputFiles": [
+      "wwwroot/lib/bootstrap/bootstrap.min.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/vendor.js",
+    "inputFiles": [
+      "wwwroot/lib/jquery/jquery-3.5.0.min.js",
+      "wwwroot/lib/popper/popper.min.js",
+      "wwwroot/lib/bootstrap/bootstrap.min.js",
+      "wwwroot/lib/jquery-validation/jquery.validate.min.js",
+      "wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
+    ]
+  }
+]

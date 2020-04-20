@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Library.ViewModels.Catalog
 {
-    public class CatalogDetailViewModel : ViewModelBase
+    public class CatalogDetailViewModel
     {
         public int AssetId { get; set; }
         public string Title { get; set; }

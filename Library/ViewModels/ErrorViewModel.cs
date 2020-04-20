@@ -1,6 +1,6 @@
 namespace Library.ViewModels
 {
-    public class ErrorViewModel : ViewModelBase
+    public class ErrorViewModel
     {
         public string RequestId { get; set; }
 
